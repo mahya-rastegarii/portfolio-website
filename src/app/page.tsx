@@ -1,6 +1,6 @@
 
 import ParticlesComponent from "@/components/particles/ParticlesComponent";
-import Avatar from "@/components/picture/Avatar";
+import Avatar from "@/components/avatar/Avatar";
 import IntroSectionBtnComponent from "@/components/section/introduction/IntroSectionBtnComponent";
 import GradientTypographyComponent from "@/components/typography/GradientTypographyComponent";
 import ScanTypographyComponent from "@/components/typography/ScanTypographyComponent";

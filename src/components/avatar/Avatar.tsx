@@ -10,13 +10,13 @@ export default function Avatar() {
   
        
         <div className="relative z-10 flex items-center justify-center w-full h-full bg-transparent rounded-full p-1">
-         <Image alt='myAvatar' src='/img/myAvatar2.png' className=" rounded-full object-fill" width={700} height={700}/>
+         <Image alt='myAvatar' src='/img/avatar.jpg' className=" rounded-full object-fill" width={700} height={700}/>
          {/* <span className="text-white font-bold text-4xl">M</span> */}
 
         </div>
   
     
-        <div className="absolute inset-0 rounded-full border-2 border-purple-400 animate-ping  custom-duration z-0" />
+        {/* <div className="absolute inset-0 rounded-full border-2 border-purple-400 animate-ping  custom-duration z-0" /> */}
       </div>
     );
  

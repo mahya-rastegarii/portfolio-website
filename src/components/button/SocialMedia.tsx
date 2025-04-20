@@ -34,7 +34,7 @@ export default function SocialMedia() {
     <div className=' flex justify-center gap-2 items-center'>
         {
             media.map( btn => (
-                <Button key={btn.title} className='rounded-full  p-1' border title={btn.title} clicked={() => console.log("btn Link", btn.link)}>
+                <Button key={btn.title} className='rounded-full  p-1' border title={btn.title}   clicked={() => console.log("btn Link", btn.link)}>
                     {
                         btn.icon
                     }

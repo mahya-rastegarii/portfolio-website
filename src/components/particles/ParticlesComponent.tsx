@@ -280,9 +280,6 @@ export default function ParticlesComponent() {
   );
 
   return init ? (
-      <div className="absolute inset-0 -z-10 bg-black">
-<div className="absolute inset-0 bg-gradient-to-bl from-purple-900/10 via-indigo-900/20 to-transparent blur-2xl" />
 <Particles id="tsparticles" particlesLoaded={particlesLoaded} options={options} />
-    </div>
   ) : null;
 }
