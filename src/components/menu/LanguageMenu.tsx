@@ -62,7 +62,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Image from "next/image";
-import i18n from "@/i18n";
+
 
 
 const options = [
@@ -78,7 +78,7 @@ export default function LanguageMenu() {
 
   const handleSelect = (option: (typeof options)[0]) => {
     setSelected(option);
-    i18n.changeLanguage(option.code)
+    
     setIsOpen(false);
   };
 
