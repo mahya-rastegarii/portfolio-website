@@ -6,9 +6,10 @@ import GradientTypographyComponent from "@/components/typography/GradientTypogra
 import ScanTypographyComponent from "@/components/typography/ScanTypographyComponent";
 import ClientWrapper from "@/components/wrapper/ClientWrapper";
 
+
 export default function Home() {
 
-
+  const name = "mahya rastegari"
   const skills  = [
     {
       id:0,
@@ -34,7 +35,7 @@ export default function Home() {
 
 <div className="flex justify-center items-center h-fit">
 <div className="max-w-3xl text-center">
-       <GradientTypographyComponent/>
+       <GradientTypographyComponent text={name}/>
      
      <div className="mt-4">
       

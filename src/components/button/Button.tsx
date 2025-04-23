@@ -19,7 +19,7 @@ export default function Button({children, clicked, className,title, disabled = f
  disabled={disabled}
  onClick={clicked}
   title={title}
-    className={`inline-flex items-center  ${border && "border"} border-purple-500 text-purple-400 hover:bg-gradient-to-r  hover:from-pink-600/70 hover:via-purple-600 hover:to-violet-600 hover:text-white transition-all duration-300 shadow-sm hover:shadow-purple-700 cursor-pointer ${className}`}
+    className={`inline-flex items-center  ${border && "border"} border-purple-500 text-purple-400 hover:bg-purple-600/80   hover:text-white transition-all duration-300 shadow-sm hover:shadow-purple-700 cursor-pointer ${className}`}
   >
 
    {
