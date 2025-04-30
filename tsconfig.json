@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/section/IntroBtnSection.Componenttsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/section/IntroBtnSection.Componenttsx", "src/hooks/useData.ts"],
   "exclude": ["node_modules"]
 }

@@ -86,7 +86,7 @@ export default function LanguageMenu() {
     <div className="relative z-50">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-fit cursor-pointer flex  items-center justify-between p-2 gap-2 bg-white/10 backdrop-blur-md rounded-md border border-purple-500 text-white"
+        className="w-fit cursor-pointer flex  items-center justify-between p-2 gap-2  rounded-md border border-purple-500 text-white"
       >
         <span className="flex items-center">
         <Image alt= {selected.label} src={selected.icon} className="" width={20} height={5}/>
@@ -101,13 +101,13 @@ export default function LanguageMenu() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="absolute mt-2 w-full bg-white/10 backdrop-blur-md rounded-md border border-purple-500/80 text-white shadow-lg"
+            className="absolute mt-2 w-full bg-white/5 backdrop-blur-md rounded-md border border-purple-500/80 text-white shadow-lg"
           >
             {options.map((option) => (
               <li
                 key={option.code}
                 onClick={() => handleSelect(option)}
-                className="p-2 hover:bg-white/30 cursor-pointer flex items-center justify-center gap-2 border-b border-purple-400/10"
+                className="p-2 hover:bg-white/30 bg-transparent cursor-pointer flex items-center justify-center gap-2 border-b border-purple-400/10"
               >
                 <Image alt={option.label} src={option.icon} className=" " width={20} height={10}/>
                 <span className=" text-sm">

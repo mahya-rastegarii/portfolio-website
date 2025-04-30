@@ -20,19 +20,19 @@ export default function TooltipComponent({
  const positions = {
     top: {
       container: `bottom-[calc(100%+16px)] left-1/2 -translate-x-1/2`,
-      arrow: "top-full left-1/2 -translate-x-1/2 border-t-violet-900/80",
+      arrow: "top-full left-1/2 -translate-x-1/2 border-t-purple-900",
     },
     bottom: {
       container: `top-[calc(100%+16px)] left-1/2 -translate-x-1/2`,
-      arrow: "bottom-full left-1/2 -translate-x-1/2 border-b-violet-900/80",
+      arrow: "bottom-full left-1/2 -translate-x-1/2 border-b-purple-900",
     },
     left: {
       container: `right-[calc(100%+18px)] top-1/2 -translate-y-1/2`,
-      arrow: "left-full top-1/2 -translate-y-1/2 border-l-violet-900/80",
+      arrow: "left-full top-1/2 -translate-y-1/2 border-l-purple-900",
     },
     right: {
       container: `left-[calc(100%+18px)] top-1/2 -translate-y-1/2`,
-      arrow: "right-full top-1/2 -translate-y-1/2 border-r-violet-900/80",
+      arrow: "right-full top-1/2 -translate-y-1/2 border-r-purple-900",
     },
   };
 
@@ -40,7 +40,7 @@ export default function TooltipComponent({
 
   return (
     <div
-      className="relative inline-block"
+      className="relative  inline-block"
       onMouseEnter={() => setShow(true)}
       onMouseLeave={() => setShow(false)}
     >
@@ -53,7 +53,7 @@ export default function TooltipComponent({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -4 }}
             transition={{ duration: 0.2 }}
-            className={`absolute z-50 px-3 py-1 text-xs whitespace-nowrap rounded-md bg-purple-500/30
+            className={`absolute z-50 px-3 py-1 text-xs whitespace-nowrap rounded-md bg-purple-900
                          text-white shadow-lg ${current.container}`}
           >
             {text}

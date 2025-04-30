@@ -29,6 +29,10 @@ body {
  font-family: var(--font-outfit) ;
 }
 
+.vazir-font{
+  font-family: var(--font-vazir) ;
+}
+
 .custom-duration{
 animation-duration: 5s;
 

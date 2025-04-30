@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import CVButton from '../button/CVButton'
+import CVButton from '../button/ResumeButton'
 import LanguageMenu from '../menu/LanguageMenu'
 
 

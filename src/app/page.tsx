@@ -31,23 +31,23 @@ export default function Home() {
       <ParticlesComponent/>
     </ClientWrapper>
    
-    <div className="flex  items-center justify-center w-[80%]">
+    <div className="flex flex-col-reverse md:flex-row  items-center  justify-center w-full md:w-[80%]">
 
 <div className="flex justify-center items-center h-fit">
-<div className="max-w-3xl text-center">
+<div className="min-w-2xl max-w-3xl text-center">
        <GradientTypographyComponent text={name}/>
      
      <div className="mt-4">
       
       <div className="relative overflow-hidden">
-     {/* <ClientWrapper> */}
+   
       
      {
         skills.map( skill => (
       <ScanTypographyComponent key={skill.id} {...skill}/>
         ))
         }
-     {/* </ClientWrapper> */}
+  
      </div>
      </div>
      <div className="flex justify-center items-center  mt-4  text-white w-full text-left outfit-font">

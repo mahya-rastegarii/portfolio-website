@@ -3,15 +3,14 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BiHome } from "react-icons/bi";
+import { BiHome, BiInfoSquare , BiCodeBlock, BiMessageDetail  } from "react-icons/bi";
 import TooltipComponent from "../tooltip/TooltipComponent";
 
 const routes = [
   { path: "/", label: "Home", icon: <BiHome className="text-xl"/> },
-  { path: "/about", label: "About", icon: <BiHome className="text-xl"/> },
-  // { path: "/skills", label: "Skills" },
-  { path: "/projects", label: "Projects", icon: <BiHome className="text-xl"/> },
-  { path: "/contact", label: "Contact", icon: <BiHome className="text-xl"/> },
+  { path: "/about", label: "About", icon: <BiInfoSquare  className="text-xl"/> },
+  { path: "/projects", label: "Projects", icon: <BiCodeBlock  className="text-xl"/> },
+  { path: "/contact", label: "Contact", icon: <BiMessageDetail className="text-xl"/> },
 ];
 
 export default function Menu() {
@@ -22,7 +21,7 @@ export default function Menu() {
       initial={{ x: -100, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
-      className="fixed top-1/2 rounded-2xl right-10 z-50  border text-purple-400 border-purple-500  px-2 py-4 flex flex-col items-center justify-center gap-3
+      className="fixed w-[80%] md:w-fit md:top-1/2 rounded-2xl left-1/2 md:right-10 z-50 md:translate-y-[-50%] bottom-0 md:left-auto md:bottom-auto translate-x-[-50%] md:translate-x-0 border text-purple-400 border-purple-500  px-2 py-4 flex md:flex-col items-center justify-center gap-3
                  bg-white/10 backdrop-blur-md border-r  shadow-lg"
     >
       {routes.map((route, index) => (

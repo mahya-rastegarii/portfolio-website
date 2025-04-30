@@ -10,16 +10,17 @@ type ButtonProps = {
     title?: string;
     disabled?: boolean;
     border?: boolean;
+    typeBtn?: "button" | "submit" | "reset";
   };
-export default function Button({children, clicked, className,title, disabled = false, border}: ButtonProps) {
+export default function Button({children, clicked, className,title, disabled = false, border, typeBtn = "button"}: ButtonProps) {
   return (
    
     <button
- type="button"
+ type={typeBtn}
  disabled={disabled}
  onClick={clicked}
   title={title}
-    className={`inline-flex items-center  ${border && "border"} border-purple-500 text-purple-400 hover:bg-purple-600/80   hover:text-white transition-all duration-300 shadow-sm hover:shadow-purple-700 cursor-pointer ${className}`}
+    className={`inline-flex items-center justify-center  ${border && "border"} border-purple-500 text-purple-400  transition-all duration-300  ${className} ${disabled ? "opacity-35 cursor-default" : " hover:bg-purple-600/80   hover:text-white shadow-sm hover:shadow-purple-700 cursor-pointer"}`}
   >
 
    {
