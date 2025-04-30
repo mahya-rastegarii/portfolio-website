@@ -47,9 +47,9 @@ export default function ContactMe() {
        
       };
   return (
-    <div className="w-full z-40 flex flex-col justify-center items-center md:flex-row gap-6">
+    <div className="w-full  md:w-[90%] xl:w-[80%] z-40 flex flex-col justify-center items-center md:flex-row gap-6">
 
-          <div className="flex flex-col justify-center items-start space-y-4 w-1/4">
+          <div className="flex flex-col justify-center  items-start space-y-4 w-full md:w-1/4">
 
           <div className=' mb-9'>
        <GradientTypographyComponent text="Contact Me"/> 

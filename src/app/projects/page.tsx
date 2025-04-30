@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 async function getProjects(){
-  const response = await fetch("http://localhost:3000/api/projects", {
+  const response = await fetch("https://portfolio-website-nu-three-50.vercel.app/api/projects", {
     cache: "no-store",
   });
 
@@ -25,7 +25,7 @@ export default async function ProjectsPage() {
  
 
   return (
-    <section className="md:h-screen w-full text-white px-6 py-20 md:px-24 flex flex-col items-center justify-center">
+    <section className="h-screen w-full text-white px-6 py-20 md:px-24 flex flex-col items-center justify-center overflow-y-scroll md:overflow-hidden">
       
      <ProjectSlider projects={projects}/>
     </section>

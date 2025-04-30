@@ -30,23 +30,23 @@ export default function AboutContent() {
     };
 
   return (
-    <div className=' w-full md:w-[80%]  flex flex-col justify-center items-end md:flex-row gap-10'>
+    <div className=' w-full md:w-[90%] xl:w-[80%]  flex flex-col justify-center items-center md:items-end py-6 md:py-0 md:flex-row gap-10'>
 
     {/* Left Sidebar - Tabs */}
-    <div className="">
+    <div className=" flex flex-col justify-center items-center w-full md:w-1/4 ">
 
-    <div className=' mb-2'>
-      <GradientTypographyComponent text='About Me' />
-      </div>
 
   
-    <div className="flex z-50 md:flex-col  gap-4 md:w-1/4">
+    <div className='mb-2'>
+      <GradientTypographyComponent text='About Me' />
+      </div>
+    <div className=" flex z-50 flex-col sm:flex-row md:flex-col w-full justify-center items-center  gap-4 ">
       {tabs.map((tab) => (
        
         <Button
          key={tab}
          clicked={() => setActiveTab(tab)}
-         className={`text-left  p-4 rounded-lg transition ${
+         className={`text-left w-[80%] sm:w-1/4 md:w-full p-4 rounded-lg transition ${
             activeTab === tab
               ? 'bg-purple-600/80 text-white'
               : 'bg-transparent border border-purple-500 text-white hover:bg-purple-600/80'
@@ -59,7 +59,7 @@ export default function AboutContent() {
     </div>
     </div>
     {/* Right Content */}
-    <div className="  md:w-3/4 z-50">
+    <div className=" w-[80%] md:w-3/4 z-50">
       <AnimatePresence mode="wait">
         <motion.div
           key={activeTab}

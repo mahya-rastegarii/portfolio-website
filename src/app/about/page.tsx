@@ -15,7 +15,7 @@ export default function AboutPage() {
  
  
   return (
-    <section className=" h-screen px-6 z-40 py-20 md:px-24 w-full text-white flex flex-col justify-center items-center">
+    <section className=" h-screen px-6 z-40 py-20 md:px-24 w-full text-white flex flex-col justify-center items-center overflow-scroll md:overflow-hidden">
       
       <AboutContent/>
     </section>

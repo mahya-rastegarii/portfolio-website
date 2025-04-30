@@ -37,6 +37,8 @@ export default function RootLayout({
       <body className="">
        
         <PageTransition/>
+
+       
         <div className=" absolute inset-0 -z-10 bg-black">
         <div className="absolute inset-0 bg-gradient-to-bl from-purple-900/10 via-indigo-900/20 to-transparent" />
         <Navbar/>
@@ -44,6 +46,7 @@ export default function RootLayout({
         {children}
         </div>
         {/* </PageTransition> */}
+       
       </body>
     </html>
   );

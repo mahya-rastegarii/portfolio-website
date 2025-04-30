@@ -11,7 +11,7 @@ export default function ContactPage() {
  
 
   return (
-    <section className="h-screen flex flex-col justify-center items-center  text-white px-6 py-20 md:px-24 ">
+    <section className="h-screen flex flex-col justify-center items-center  text-white px-6 py-20  md:px-24 overflow-y-scroll md:overflow-hidden">
    
       
          <ContactMe/>

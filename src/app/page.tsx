@@ -26,16 +26,17 @@ export default function Home() {
  
   return (
     
-   <section className="relative h-screen  flex  items-center justify-center w-full">
+   <section className="relative h-screen  flex  items-center justify-center w-full overflow-y-scroll md:overflow-hidden py-8 ">
+
     <ClientWrapper >
       <ParticlesComponent/>
     </ClientWrapper>
    
-    <div className="flex flex-col-reverse md:flex-row  items-center  justify-center w-full md:w-[80%]">
+   <div className="flex flex-col-reverse md:flex-row  items-center  justify-center w-full md:w-[80%]">
 
-<div className="flex justify-center items-center h-fit">
-<div className="min-w-2xl max-w-3xl text-center">
-       <GradientTypographyComponent text={name}/>
+  <div className="flex justify-center items-center h-fit">
+<div className="w-full max-w-3xl text-center">
+    <GradientTypographyComponent text={name}/>
      
      <div className="mt-4">
       
@@ -61,10 +62,11 @@ export default function Home() {
    
 </div>
 </div>
+
 <div className="flex justify-center items-center p-1 m-2 w-1/2">
   <Avatar/>
 </div>
-    </div>
+    </div> 
    </section>
     
   );

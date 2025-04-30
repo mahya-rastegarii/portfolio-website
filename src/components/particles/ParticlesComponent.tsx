@@ -140,7 +140,7 @@ export default function ParticlesComponent() {
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
-      await loadSlim(engine); // بارگزاری نسخه slim
+      await loadSlim(engine); 
     }).then(() => setInit(true));
   }, []);
 
@@ -152,11 +152,11 @@ export default function ParticlesComponent() {
     () => ({
       fullScreen: {
         enable: true,
-        zIndex: -1, // پشت همه محتوا
+        zIndex: -1, 
       },
       background: {
         color: {
-          value: "transparent", // رنگ پس‌زمینه (tailwind slate-900)
+          value: "transparent",
           // value: "linear-gradient(135deg, #0f0c29, #302b63, #24243e)",
         },
         opacity: 1,
@@ -280,6 +280,7 @@ export default function ParticlesComponent() {
   );
 
   return init ? (
+ 
 <Particles id="tsparticles" particlesLoaded={particlesLoaded} options={options} />
   ) : null;
 }

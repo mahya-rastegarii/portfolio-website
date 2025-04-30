@@ -37,11 +37,24 @@ export default function ProjectSlider({projects} : ProjectSliderProps) {
   
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl">
+    <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full py-6 md:py-0 max-w-6xl">
 
         {/* Left - Info */}
+        <div className='flex md:hidden justify-end items-center px-7 gap-2'>
+
+<div className="">
+  <Button clicked={prevProject} border title='Arrow Prev' className=" rounded-full p-1" disabled={project.id == 1}>
+    <MdKeyboardArrowLeft className="text-purple-400 text-3xl"/>
+  </Button>
+</div>
+<div className="">
+  <Button clicked={nextProject} border title='Arrow Next' className=" rounded-full p-1" disabled={project.id == projects.length}>
+    <MdKeyboardArrowRight className="text-purple-400 text-3xl"/>
+  </Button>
+</div>
+</div>
         <div className="md:w-1/2 z-40 space-y-4">
-          <div className=' mb-10'>
+          <div className='hidden md:inline-flex mb-10'>
       
        <GradientTypographyComponent text=' My Projects' />
       </div>
@@ -106,7 +119,7 @@ export default function ProjectSlider({projects} : ProjectSliderProps) {
           </AnimatePresence>
           </div>
           {/* Arrows */}
-          <div className='flex justify-end items-center px-7 gap-2'>
+          <div className='hidden md:flex justify-end items-center px-7 gap-2'>
 
           <div className="">
             <Button clicked={prevProject} border title='Arrow Prev' className=" rounded-full p-1" disabled={project.id == 1}>
@@ -120,6 +133,10 @@ export default function ProjectSlider({projects} : ProjectSliderProps) {
           </div>
           </div>
         </div>
+        <div className='inline-flex md:hidden mb-10'>
+      
+      <GradientTypographyComponent text=' My Projects' />
+     </div>
       </div>
   )
 }
