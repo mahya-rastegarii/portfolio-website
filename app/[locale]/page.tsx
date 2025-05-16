@@ -45,7 +45,7 @@ export  default async  function Home({params} : {params: {locale: string}}) {
   animate={{opacity:1, x: 0}}
   exit={{opacity: 0, x:  languageLocale === "fa" ? -50 :50}}
   transition={{duration: 0.5}}
-  className="flex justify-center items-center h-fit"> 
+  className="flex justify-center items-center h-fit">
 <div className="w-full max-w-3xl text-center">
     <GradientTypographyComponent text={name}/>
      
