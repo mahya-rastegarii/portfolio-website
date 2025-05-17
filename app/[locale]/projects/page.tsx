@@ -2,7 +2,7 @@
 import ProjectSlider from '../components/section/projects/ProjectSlider';
 import { Metadata } from 'next';
 import toast, { Toaster } from 'react-hot-toast';
-import { getI18n, getStaticParams } from '../../../locales/server';
+import { getI18n } from '../../../locales/server';
 
 export const metadata: Metadata = {
   title:"My Projects",
@@ -10,9 +10,6 @@ export const metadata: Metadata = {
 };
 
 
-export async function generateStaticParams() {
-  return getStaticParams(); 
-}
 async function getProjects(){
 
   const t = await getI18n()

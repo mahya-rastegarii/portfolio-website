@@ -5,17 +5,13 @@ import AboutContent from '../components/section/about/AboutContent';
 
 // import GradientTypographyComponent from '@/components/typography/GradientTypographyComponent';
 import React from 'react';
-import { getStaticParams } from '../../../locales/server';
-
 
 export const metadata: Metadata = {
   title:"About Me",
   description: " about page in portfolio",
 };
 
-export async function generateStaticParams() {
-  return getStaticParams(); 
-}
+
 export default function AboutPage() {
  
    
