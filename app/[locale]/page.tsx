@@ -5,7 +5,7 @@ import IntroSectionBtnComponent from "./components/section/introduction/IntroSec
 import GradientTypographyComponent from "./components/typography/GradientTypographyComponent";
 import ScanTypographyComponent from "./components/typography/ScanTypographyComponent";
 import ClientWrapper from "./components/wrapper/ClientWrapper";
-import { getI18n } from "../../locales/server";
+import { getI18n, getStaticParams } from "../../locales/server";
 import MotionWrapper from "./components/wrapper/MotionWrapper";
 
 
@@ -13,9 +13,11 @@ export interface IPageParams {
   params: {locale: string}
 }
 
+  export async function generateStaticParams() {
+    return getStaticParams(); 
+  }
+
 export  default async  function Home({params} : IPageParams) {
-
-
   const t = await getI18n();
 
   const name = t("myName");
