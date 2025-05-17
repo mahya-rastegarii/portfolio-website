@@ -8,13 +8,12 @@ import ClientWrapper from "./components/wrapper/ClientWrapper";
 import { getI18n } from "../../locales/server";
 import MotionWrapper from "./components/wrapper/MotionWrapper";
 
-type Props = {
-  params: {
-    locale: string;
-  };
-};
 
-export  default async  function Home({params} : Props) {
+export interface IPageParams {
+  params: {locale: string}
+}
+
+export  default async  function Home({params} : IPageParams) {
 
 
   const t = await getI18n();

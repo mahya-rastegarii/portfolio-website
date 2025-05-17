@@ -3,9 +3,7 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { useParams } from 'next/navigation';
 
-export interface IPageParams {
-  params: {locale: string}
-}
+
 export default function AboutMe() {
 
    const params = useParams();
