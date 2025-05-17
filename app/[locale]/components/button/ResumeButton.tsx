@@ -4,17 +4,20 @@ import { BiDownload } from 'react-icons/bi'
 import Button from './Button'
 import { useI18n } from '../../../../locales/client'
 
+
+
  const downloadResume = () => {
+  const resumeUrl = "https://br6qgqdbbbsqsadm.public.blob.vercel-storage.com/mahya-rastegari-R3bTeiZYJVmOX6ddhVgEMfi2kAfTnO.pdf";
+  const fileName = "mahya-rastegari.pdf";
 
   const link = document.createElement('a');
-  link.href = "#";
-  link.setAttribute('download', '#اسم');
+  link.href = resumeUrl;
+  link.download = fileName;
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
-
- }
-
+  
+}
 
 export default function ResumeButton() {
   const t = useI18n();
@@ -27,3 +30,4 @@ export default function ResumeButton() {
   </Button>
   )
 }
+
