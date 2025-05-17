@@ -7,6 +7,7 @@ import { PageTransition } from "./components/transition/PageTransition";
 import { I18nProviderClient } from "../../locales/client";
 
 
+
 const outfit = Outfit({
   subsets: ["latin"],
   weight: ["400", "600", "800"],
@@ -36,16 +37,17 @@ export default function RootLayout({
   params: { locale : string};
 }>) {
 
-const languageLocale = params?.locale || "en";
+ 
+
 
  
   return (
-    <html lang={languageLocale}>
-      <body className={ languageLocale === "fa" ? vazir.variable : outfit.variable}>
+    <html lang={params.locale}>
+      <body className={ params.locale === "fa" ? vazir.variable : outfit.variable}>
        
         <PageTransition/>
 
-        <I18nProviderClient locale={languageLocale}>
+        <I18nProviderClient locale={params.locale}>
         <div className=" absolute inset-0 -z-10 bg-black">
         <div className="absolute inset-0 bg-gradient-to-bl from-purple-900/10 via-indigo-900/20 to-transparent" />
         <Navbar/>

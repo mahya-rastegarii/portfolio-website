@@ -2,13 +2,14 @@
 
 import React, { useState } from 'react'
 
-import { motion, AnimatePresence } from 'framer-motion';
+
 import Button from '../../button/Button';
 import GradientTypographyComponent from '../../typography/GradientTypographyComponent';
 import { useCurrentLocale, useI18n } from '../../../../../locales/client';
 import AboutMe from './AboutMe';
 import Skills from './Skills';
 import Education from './Education';
+import MotionWrapper from '../../wrapper/MotionWrapper';
 
 
 // type TabType = typeof tabs[number];
@@ -73,18 +74,16 @@ export default function AboutContent() {
     </div>
     {/* Right Content */}
     <div className=" w-full md:w-3/4 z-50">
-      <AnimatePresence mode="wait">
-        <motion.div
+    
+        <MotionWrapper
+          num={50}
           key={activeTab}
-          initial={{ opacity: 0, x: locale === "fa" ? -50 : 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: locale === "fa" ? 50 :-50 }}
-          transition={{ duration: 0.5 }}
+         
           className="px-1 md:px-2 lg:px-4  py-12 border  border-purple-500 bg-purple-500/5 rounded-lg shadow-xl"
         >
           {content[activeTab]}
-        </motion.div>
-      </AnimatePresence>
+        </MotionWrapper>
+     
       </div>
     </div>
   )

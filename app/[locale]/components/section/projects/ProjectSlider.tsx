@@ -9,6 +9,7 @@ import { RiExternalLinkLine, RiGithubLine } from 'react-icons/ri';
 import GradientTypographyComponent from '../../typography/GradientTypographyComponent';
 import { Project } from '../../../../api/projects/route';
 import { useCurrentLocale, useI18n } from '../../../../../locales/client';
+import MotionWrapper from '../../wrapper/MotionWrapper';
 
 
 
@@ -60,13 +61,11 @@ const t= useI18n()
       
        <GradientTypographyComponent text={t("projects.title")} />
       </div>
-          <AnimatePresence mode="wait">
-            <motion.div
+        
+            <MotionWrapper
+            num={50}
               key={project.titleEn}
-              initial={{ opacity: 0, x: locale === "fa" ? 50 : -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: locale === "fa" ? -50 :50 }}
-              transition={{ duration: 0.5 }}
+             
               className="space-y-4"
             >
               <h2 className="text-3xl md:text-5xl text-purple-400/90 font-light">
@@ -98,8 +97,7 @@ const t= useI18n()
               </Button>
                 
               </div>
-            </motion.div>
-          </AnimatePresence>
+            </MotionWrapper>
         </div>
 
         {/* Right - Image */}
