@@ -29,25 +29,24 @@ export const metadata: Metadata = {
   description: "portfolio",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params
 }: Readonly<{
   children: React.ReactNode;
-  params: { locale : string};
+  params: Promise<{ locale: string }>;
 }>) {
 
  
+ const {locale} = await params;
 
-
- 
   return (
-    <html lang={params.locale}>
-      <body className={ params.locale === "fa" ? vazir.variable : outfit.variable}>
+    <html lang={locale}>
+      <body className={ locale === "fa" ? vazir.variable : outfit.variable}>
        
         <PageTransition/>
 
-        <I18nProviderClient locale={params.locale}>
+        <I18nProviderClient locale={locale}>
         <div className=" absolute inset-0 -z-10 bg-black">
         <div className="absolute inset-0 bg-gradient-to-bl from-purple-900/10 via-indigo-900/20 to-transparent" />
         <Navbar/>

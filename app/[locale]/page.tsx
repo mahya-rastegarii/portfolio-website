@@ -8,18 +8,17 @@ import ClientWrapper from "./components/wrapper/ClientWrapper";
 import { getI18n, getStaticParams } from "../../locales/server";
 import MotionWrapper from "./components/wrapper/MotionWrapper";
 
-
-export interface IPageParams {
-  params: {locale: string}
+export async function generateStaticParams() {
+  return getStaticParams(); 
 }
-
-  export async function generateStaticParams() {
-    return getStaticParams(); 
-  }
+export interface IPageParams {
+  params: Promise<{ locale: string }>
+}
+ 
 
 export  default async  function Home({params} : IPageParams) {
   const t = await getI18n();
-
+ const {locale} = await  params;
   const name = t("myName");
   const skills  = [
     {
@@ -43,7 +42,7 @@ export  default async  function Home({params} : IPageParams) {
       <ParticlesComponent/>
     </ClientWrapper>
    
-   <div className={`flex flex-col-reverse  ${params.locale === "fa" ? "md:flex-row-reverse" : "md:flex-row"} items-center  justify-center w-full md:w-[80%] mt-24 mb-20 md:mb-0  md:mt-0`}>
+   <div className={`flex flex-col-reverse  ${locale === "fa" ? "md:flex-row-reverse" : "md:flex-row"} items-center  justify-center w-full md:w-[80%] mt-24 mb-20 md:mb-0  md:mt-0`}>
    
      <ClientWrapper>
   <MotionWrapper
@@ -59,13 +58,13 @@ export  default async  function Home({params} : IPageParams) {
       
      {
         skills.map( skill => (
-      <ScanTypographyComponent key={skill.id} {...skill} dir={params.locale === "fa" ? "text-scan-rtl" : "text-scan-ltr"}/>
+      <ScanTypographyComponent key={skill.id} {...skill} dir={locale === "fa" ? "text-scan-rtl" : "text-scan-ltr"}/>
         ))
         }
   
      </div>
      </div>
-     <div className={`flex justify-center items-center  mt-4  text-white w-full ${params.locale === "fa" ? "text-right" : "text-left"} outfit-font`}>
+     <div className={`flex justify-center items-center  mt-4  text-white w-full ${locale === "fa" ? "text-right" : "text-left"} outfit-font`}>
      <p className="w-[70%] font-light">
       {t("dashboard.aboutMe")}
      </p>

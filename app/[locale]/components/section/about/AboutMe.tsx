@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { useParams } from 'next/navigation';
 
 
+
+
 export default function AboutMe() {
 
    const params = useParams();

@@ -3,11 +3,17 @@
 import ContactMe from "../components/section/contact/ContactMe";
 import { Metadata } from "next";
 import { Toaster } from "react-hot-toast";
+import { getStaticParams } from "../../../locales/server";
 
 export const metadata: Metadata = {
   title:"Contact Me",
   description: " Contact page in portfolio",
 };
+
+export async function generateStaticParams() {
+  return getStaticParams(); 
+}
+
 export default function ContactPage() {
  
 
