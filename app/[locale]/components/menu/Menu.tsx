@@ -24,7 +24,7 @@ export default function Menu() {
       initial={{ x: -100, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
-      className="fixed w-[70%] md:w-fit md:top-1/2 rounded-2xl left-1/2 md:right-5 xl:right-10 z-[900] md:translate-y-[-50%] bottom-0.5 md:left-auto md:bottom-auto translate-x-[-50%] md:translate-x-0 border text-purple-400 border-purple-500  px-2 py-2 md:py-4 flex md:flex-col items-center justify-center gap-3
+      className="fixed w-[70%] md:w-fit md:top-1/2 rounded-2xl left-1/2 md:right-5 xl:right-10 z-[9999] md:translate-y-[-50%] bottom-0.5 md:left-auto md:bottom-auto translate-x-[-50%] md:translate-x-0 border text-purple-400 border-purple-500  px-2 py-2 md:py-4 flex md:flex-col items-center justify-center gap-3
                  bg-white/10 backdrop-blur-md border-r  shadow-lg"
     >
       {routes.map((route, index) => (
