@@ -47,8 +47,11 @@ export default async function RootLayout({
         <PageTransition/>
 
         <I18nProviderClient locale={locale}>
-        <div className=" min-h-screen relative -z-10 bg-black">
-        <div className="absolute inset-0 bg-gradient-to-bl from-purple-900/10 via-indigo-900/20 to-transparent" />
+
+       <div className="relative min-h-screen overflow-x-hidden">
+        <div className=" absolute inset-0 -z-10 bg-black">
+    <div className="absolute inset-0 bg-gradient-to-bl from-purple-900/10 via-indigo-900/20 to-transparent" />
+    </div>
         <Navbar/>
         <Menu/>
         {children}
