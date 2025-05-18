@@ -153,7 +153,7 @@ export default function ContactMe() {
             disabled={isSubmitting}
             border
             title={t("contactMe.submitBtn.title")}
-            className=" py-3 w-1/3 px-2 rounded-lg transition  "
+            className=" py-3 w-full md:w-1/3 px-2 rounded-lg transition  "
           >
              {isSubmitting ? t("contactMe.submitBtn.submittingTitle") : t("contactMe.submitBtn.title")}
           </Button>

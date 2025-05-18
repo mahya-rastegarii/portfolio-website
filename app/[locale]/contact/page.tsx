@@ -15,7 +15,7 @@ export default function ContactPage() {
  
 
   return (
-    <section className="h-full lg:h-screen flex flex-col justify-center items-center  text-white px-6 lg:py-20  lg:px-24 overflow-y-scroll pt-10 lg:pt-4 lg:overflow-hidden">
+    <section className="min-h-screen h-screen flex flex-col justify-center items-center  text-white px-6 lg:py-20  lg:px-24 overflow-y-scroll pt-10 lg:pt-4 lg:overflow-hidden">
    <Toaster
   position="top-right"
   reverseOrder={true}
