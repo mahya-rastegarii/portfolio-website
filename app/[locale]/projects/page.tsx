@@ -13,8 +13,7 @@ export const metadata: Metadata = {
 async function getProjects(){
 
   const t = await getI18n()
-  const response = await fetch(" http://localhost:3000/api/projects", {
-    //https://portfolio-website-nu-three-50.vercel.app/api/projects
+  const response = await fetch(" https://portfolio-website-nu-three-50.vercel.app/api/projects", {
     cache: "no-store",
   });
 
@@ -31,7 +30,7 @@ export default async function ProjectsPage() {
  
 
   return (
-    <section className="h-screen w-full text-white px-6  md:px-24 flex flex-col items-center justify-center overflow-y-scroll lg:overflow-hidden pt-32 lg:pt-0">
+    <section className="h-full lg:h-screen w-full text-white px-6  md:px-24 flex flex-col items-center justify-center overflow-y-scroll lg:overflow-hidden pt-32 lg:pt-0">
       <Toaster
   position="top-left"
   reverseOrder={true}

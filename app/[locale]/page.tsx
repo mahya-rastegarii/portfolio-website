@@ -34,7 +34,7 @@ export  default async  function Home({params} : IPageParams) {
  
   return (
     
-   <section className="relative h-full md:h-screen  flex items-center justify-center w-full overflow-y-scroll md:overflow-hidden pt-10 md:pt-0">
+   <section className="relative h-full lg:h-screen  flex items-center justify-center w-full overflow-y-scroll md:overflow-hidden pt-10 md:pt-0">
 
     <ClientWrapper >
       <ParticlesComponent/>

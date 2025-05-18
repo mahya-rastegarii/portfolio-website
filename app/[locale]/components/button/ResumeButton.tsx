@@ -12,7 +12,8 @@ import { useI18n } from '../../../../locales/client'
 
   const link = document.createElement('a');
   link.href = resumeUrl;
-  link.download = fileName;
+  link.setAttribute("download", fileName); 
+  link.setAttribute("target", "_blank");
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);

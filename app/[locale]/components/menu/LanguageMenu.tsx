@@ -60,7 +60,7 @@ export default function LanguageMenu() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="absolute mt-2 w-full bg-white/5 backdrop-blur-md rounded-md border border-purple-500/80 text-white shadow-lg"
+            className="absolute mt-2 w-full bg-white/5 backdrop-blur-md rounded-md border border-purple-500/80 text-white shadow-lg z-50"
           >
             {options.map((option) => (
               <li

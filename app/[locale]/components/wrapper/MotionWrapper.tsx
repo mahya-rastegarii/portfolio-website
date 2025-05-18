@@ -24,7 +24,7 @@ export default function MotionWrapper({className, num, children } : MotionProps)
     
     transition={{duration: 0.5}}
     
-    className={className}>
+    className={ className}>
     {
     children
     }
