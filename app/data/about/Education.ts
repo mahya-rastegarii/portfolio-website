@@ -4,8 +4,8 @@ export const education = [
       titleEn: "Computer Engineering - Software",
       degreeFa: "کاردانی",
       degreeEn: "Associate's Degree",
-      locationFa: "دانشگاه",
-      locationEn: "University",
+      locationFa: "دانشگاه شریعتی تهران",
+      locationEn: "shariaty University",
       year: "1398-1400",
     },
     {
@@ -13,8 +13,8 @@ export const education = [
       titleEn: "Professional Computer Engineering - Software",
       degreeFa: "کارشناسی",
       degreeEn: "Bachelor's Degree",
-      locationFa: "دانشگاه",
-      locationEn: "University",
+      locationFa: "دانشگاه آزاد اسلامی پرند",
+      locationEn: "Parand Islamic Azad University",
       year: "1401-1403",
     },
     {

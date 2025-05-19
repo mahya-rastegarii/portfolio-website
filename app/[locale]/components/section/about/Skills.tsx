@@ -11,7 +11,7 @@ export default function Skills() {
     const locale = params?.locale || "en"
 
   return (
-    <div dir={locale === "fa" ? "rtl" : "ltr"} className="space-y-2 grid grid-cols-3 sm:grid-cols-4 place-items-center md:grid-cols-5 xl:grid-cols-6 gap-2 mt-10  md:gap-4 xl:gap-5">
+    <div dir={locale === "fa" ? "rtl" : "ltr"} className="space-y-2 grid grid-cols-3 sm:grid-cols-4 place-items-center md:grid-cols-5 xl:grid-cols-6 gap-2 md:gap-4 xl:gap-5">
 
     {skills.map((skill, i) => (
       <TooltipComponent  key={skill.title} position='bottom' text={skill.title}>

@@ -40,10 +40,10 @@ const t= useI18n()
   
 
   return (
-    <div dir={locale === "fa" ? "rtl" : "ltr"} className={`flex flex-col-reverse lg:flex-row items-center lg:items-end justify-center w-full  md:mt-24 mb-20 md:mb-10 lg:mt-0 lg:mb-0 pt-10 lg:pt-0 max-w-6xl `}>
+    <div dir={locale === "fa" ? "rtl" : "ltr"} className={`flex flex-col-reverse lg:flex-row items-center lg:items-end justify-center w-full  md:mt-24 mb-20 md:mb-10 lg:mt-0 lg:mb-0  max-w-6xl `}>
 
         {/* Left - Info */}
-        <div dir='ltr' className='flex h-fit z-40  lg:hidden justify-end items-center px-7 gap-2 mt-10 md:mt-20 lg:mt-0'>
+        <div dir='ltr' className='flex h-fit z-40  lg:hidden justify-end items-center px-7 gap-2 md:mt-20 lg:mt-0'>
 
 <div className="">
   <Button clicked={prevProject} border title='Arrow Prev' className=" rounded-full p-1" disabled={project.id == 1}>
