@@ -68,10 +68,13 @@ const t= useI18n()
              
               className="space-y-4"
             >
+              <div className='flex flex-row justify-around lg:justify-start items-center lg:flex-col'>
+
               <h2 className="text-3xl md:text-5xl text-purple-400/90 font-light">
                0{project.id}
               </h2>
               <h2 className="text-3xl md:text-4xl font-bold text-purple-600/80">{locale === "fa" ? project.titleFa : project.titleEn}</h2>
+              </div>
               <p className="text-gray-300 text-sm md:text-base leading-relaxed">{locale === "fa" ? project.descriptionFa : project.descriptionEn}</p>
               <ul className="flex flex-wrap gap-2 text-sm">
                 {project.techs.map((tech, i) => (
@@ -110,7 +113,7 @@ const t= useI18n()
               key={project.titleEn}
               src={project.image}
               alt={project.titleEn}
-              className=" w-[100%] h-auto object-cover"
+              className=" w-full h-auto object-cover"
               initial={{ opacity: 0, x: locale === "fa" ?  -50 :50 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: locale === "fa" ?50 : -50 }}

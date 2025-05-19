@@ -51,7 +51,7 @@ export default function ContactMe() {
        
       };
   return (
-    <div dir={locale === "fa" ? "rtl" : "ltr"} className="w-full md:w-[80%] lg:w-[90%] xl:w-[80%] z-40 flex flex-col justify-center items-center lg:flex-row gap-2 mt-20 pt-10 lg:pt-0 mb-10 lg:mb-0  lg:mt-24">
+    <div dir={locale === "fa" ? "rtl" : "ltr"} className="w-full md:w-[80%] lg:w-[90%] xl:w-[80%] z-40 flex flex-col justify-center items-center lg:flex-row gap-2 mt-20 pt-10 lg:pt-0 mb-20 lg:mb-0  lg:mt-24">
 
           <div className="flex flex-col justify-center  items-start space-y-4 w-full lg:w-2/4">
 
