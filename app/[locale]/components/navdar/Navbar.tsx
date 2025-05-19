@@ -14,9 +14,9 @@ export default function Navbar() {
   return (
     <div
       className={`
-        fixed top-0 left-0 w-full z-[9999] py-3
+        fixed top-0 left-0 w-full z-50 py-3
         transition-all duration-300
-       backdrop-blur-md bg-black/20 shadow-md
+       backdrop-blur-sm bg-black/5 shadow-sm
       `}
     >
       <div className="flex justify-center md:justify-end items-center container w-full px-2 md:px-0 md:w-[90%]">

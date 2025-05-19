@@ -40,7 +40,7 @@ const t= useI18n()
   
 
   return (
-    <div dir={locale === "fa" ? "rtl" : "ltr"} className={`flex flex-col-reverse lg:flex-row items-center justify-between w-full  md:mt-24 mb-20 md:mb-10 lg:mt-0 lg:mb-0 pt-10 lg:pt-0 max-w-6xl `}>
+    <div dir={locale === "fa" ? "rtl" : "ltr"} className={`flex flex-col-reverse lg:flex-row items-center lg:items-end justify-center w-full  md:mt-24 mb-20 md:mb-10 lg:mt-0 lg:mb-0 pt-10 lg:pt-0 max-w-6xl `}>
 
         {/* Left - Info */}
         <div dir='ltr' className='flex h-fit z-40  lg:hidden justify-end items-center px-7 gap-2 mt-10 md:mt-20 lg:mt-0'>
@@ -68,13 +68,11 @@ const t= useI18n()
              
               className="space-y-4"
             >
-              <div className='flex flex-row justify-around lg:justify-start items-center lg:flex-col'>
-
+  
               <h2 className="text-3xl md:text-5xl text-purple-400/90 font-light">
                0{project.id}
               </h2>
               <h2 className="text-3xl md:text-4xl font-bold text-purple-600/80">{locale === "fa" ? project.titleFa : project.titleEn}</h2>
-              </div>
               <p className="text-gray-300 text-sm md:text-base leading-relaxed">{locale === "fa" ? project.descriptionFa : project.descriptionEn}</p>
               <ul className="flex flex-wrap gap-2 text-sm">
                 {project.techs.map((tech, i) => (
@@ -104,7 +102,7 @@ const t= useI18n()
         </div>
 
         {/* Right - Image */}
-        <div className="lg:w-1/2 md:w-[90%] z-20 flex-col space-y-4 justify-center items-center py-4 px-6">
+        <div className="lg:w-1/2 md:w-[90%] z-20 flex-col space-y-4 justify-center items-center py-4 px-2">
         <div className=' w-full flex justify-center items-center'>
 
        
