@@ -134,7 +134,7 @@ const t= useI18n()
           </div>
           </div>
         </div>
-        <div className='inline-flex lg:hidden  lg:mb-10  mt-32 lg:mt-0 pt-12 lg:pt-0'>
+        <div className='inline-flex lg:hidden  mb-10 '>
       
       <GradientTypographyComponent text=' My Projects' />
      </div>

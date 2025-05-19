@@ -51,7 +51,7 @@ export default function ContactMe() {
        
       };
   return (
-    <div dir={locale === "fa" ? "rtl" : "ltr"} className="w-full md:w-[80%] lg:w-[90%] xl:w-[80%] z-40 flex flex-col justify-center items-center lg:flex-row gap-2  lg:pt-0 mb-20 lg:mb-0  lg:mt-24">
+    <div dir={locale === "fa" ? "rtl" : "ltr"} className="w-full md:w-[80%] lg:w-[90%] xl:w-[80%] z-40 flex flex-col justify-center items-center lg:flex-row gap-2 mt-16  mb-20 lg:mb-0  lg:mt-24">
 
           <div className="flex flex-col justify-center  items-start space-y-4 w-full lg:w-2/4">
 
@@ -69,7 +69,7 @@ export default function ContactMe() {
     transition={{ delay: i * 0.05 }}
    className="flex justify-start items-center gap-3">
 
-<div className='text-center my-auto border border-purple-600/80 text-xl text-purple-600/80 mt-16 lg:mt-0 rounded-lg p-2 h-fit'>
+<div className='text-center my-auto border border-purple-600/80 text-xl text-purple-600/80  rounded-lg p-2 h-fit'>
    {item.icon}
 </div>
 <div >
