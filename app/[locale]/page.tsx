@@ -40,7 +40,7 @@ export  default async  function Home({params} : IPageParams) {
       <ParticlesComponent/>
     </ClientWrapper>
    
-   <div className={`flex flex-col-reverse  ${locale === "fa" ? "md:flex-row-reverse" : "md:flex-row"} items-center  justify-center w-full md:w-[80%] mt-24 mb-20 md:mb-0  md:mt-0`}>
+   <div className={`flex flex-col-reverse  ${locale === "fa" ? "md:flex-row-reverse" : "md:flex-row"} items-center  justify-center w-full md:w-[80%] mt-16 mb-20 md:mb-0  md:mt-0`}>
    
      <ClientWrapper>
   <MotionWrapper

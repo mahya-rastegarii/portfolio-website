@@ -69,7 +69,7 @@ export default function ContactMe() {
     transition={{ delay: i * 0.05 }}
    className="flex justify-start items-center gap-3">
 
-<div className='text-center my-auto border border-purple-600/80 text-xl text-purple-600/80  rounded-lg p-2 h-fit'>
+<div className='text-center my-auto border border-purple-600/80 text-xl text-purple-600/80 mt-16 lg:mt-0 rounded-lg p-2 h-fit'>
    {item.icon}
 </div>
 <div >

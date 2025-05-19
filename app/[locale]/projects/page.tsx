@@ -30,7 +30,7 @@ export default async function ProjectsPage() {
  
 
   return (
-    <section className="relative min-h-screen lg:h-screen w-full text-white px-6  md:px-24 flex flex-col items-center justify-center overflow-y-scroll lg:overflow-hidden pt-32 lg:pt-0">
+    <section className="relative min-h-screen lg:h-screen w-full text-white px-6  md:px-24 flex flex-col items-center justify-center overflow-y-scroll lg:overflow-hidden pt-10 lg:pt-0">
       <Toaster
   position="top-left"
   reverseOrder={true}

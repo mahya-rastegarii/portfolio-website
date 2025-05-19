@@ -44,7 +44,7 @@ export default function AboutContent() {
   
 
   return (
-    <div className={` w-full  xl:w-[80%]  flex flex-col justify-center items-center md:items-end   md:pt-20 lg:pt-0 md:flex-row  mb-5 md:mb-0  md:mt-0 ${locale === "fa" ? "md:flex-row-reverse" : "md:flex-row"} gap-10`}>
+    <div className={` w-full  xl:w-[80%]  flex flex-col justify-center items-center md:items-end  mt-16 md:pt-20 lg:pt-0 md:flex-row  mb-5 md:mb-0  md:mt-0 ${locale === "fa" ? "md:flex-row-reverse" : "md:flex-row"} gap-10`}>
 
     {/* Left Sidebar - Tabs */}
     <div className=" flex flex-col justify-center items-center w-full md:w-1/4 ">
