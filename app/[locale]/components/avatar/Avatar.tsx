@@ -4,7 +4,7 @@ export default function Avatar() {
   return (
   
 
-      <div className="relative w-40 h-40 sm:w-52 sm:h-52 md:w-72 md:h-72 xl:w-80 xl:h-80 rounded-full overflow-hidden shadow-[0_0_40px_rgba(192,132,252,0.3)] group">
+      <div className="relative w-44 h-44 sm:w-52 sm:h-52 md:w-72 md:h-72 xl:w-80 xl:h-80 rounded-full overflow-hidden shadow-[0_0_40px_rgba(192,132,252,0.3)] group">
 
          <div className="absolute inset-0 bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 animate-spin custom-duration blur-xl opacity-30"/> 
   
