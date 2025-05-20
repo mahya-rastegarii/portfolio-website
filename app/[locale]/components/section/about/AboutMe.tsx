@@ -12,7 +12,7 @@ export default function AboutMe() {
   const locale = params?.locale || "en"
   return (
   
-    <div dir={locale === "fa" ? "rtl" : "ltr"} className={`  grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 ${locale === "fa" ? "md:place-items-start" : "md:place-items-end" } place-items-center px-4 gap-y-6`}>
+    <div dir={locale === "fa" ? "rtl" : "ltr"} className={`  grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3  place-items-center md:place-items-start px-4 lg:my-10 gap-y-6`}>
  {
   aboutMe.map( (item, i) => (
     <motion.div

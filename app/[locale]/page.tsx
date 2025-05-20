@@ -44,7 +44,8 @@ export  default async  function Home({params} : IPageParams) {
    
      <ClientWrapper>
   <MotionWrapper
-  num={50}
+  num1={locale === "fa" ? 50 :-50}
+  num2={locale === "fa" ? -50 : 50}
   className="flex justify-center items-center h-fit">
 <div className="w-full max-w-3xl text-center">
     <GradientTypographyComponent text={name}/>
@@ -76,7 +77,8 @@ export  default async  function Home({params} : IPageParams) {
 
 <ClientWrapper>
 <MotionWrapper
-num={50}
+num1={locale === "fa" ? -50 :50}
+num2={locale === "fa" ? 50 :-50}
 className="flex justify-center items-center p-1 m-2 w-1/2"
 >
   <Avatar/>

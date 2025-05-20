@@ -7,13 +7,14 @@ type TooltipProps = {
   children: ReactNode;
   text?: string;
   position?: "top" | "bottom" | "left" | "right";
- 
+  className?: string;
 };
 
 export default function TooltipComponent({
   children,
   text,
   position = "top",
+  className,
 }: TooltipProps) {
   const [show, setShow] = useState(false);
 
@@ -53,7 +54,7 @@ export default function TooltipComponent({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -4 }}
             transition={{ duration: 0.2 }}
-            className={`absolute hidden md:inline-flex z-50 px-3 py-1 text-xs whitespace-nowrap rounded-md bg-purple-900
+            className={`absolute ${className}  z-50 px-3 py-1 text-xs whitespace-nowrap rounded-md bg-purple-900
                          text-white shadow-lg ${current.container}`}
           >
             {text}

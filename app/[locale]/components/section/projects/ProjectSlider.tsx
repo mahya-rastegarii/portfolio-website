@@ -23,7 +23,7 @@ export default function ProjectSlider({projects} : ProjectSliderProps) {
 
   const locale = useCurrentLocale()
 const t= useI18n()
-   const [index, setIndex] = useState<number>(projects.length -1);
+   const [index, setIndex] = useState<number>(0);
   
    
   
@@ -63,7 +63,8 @@ const t= useI18n()
       </div>
         
             <MotionWrapper
-            num={50}
+            num1={locale === "fa" ? 50 :-50}
+            num2={locale === "fa" ? -50 : 50}
               key={project.titleEn}
              
               className="space-y-4"
@@ -102,7 +103,7 @@ const t= useI18n()
         </div>
 
         {/* Right - Image */}
-        <div className="lg:w-1/2 md:w-[90%] z-20 flex-col space-y-4 justify-center items-center py-4 px-2">
+        <div className="w-full lg:w-1/2 md:w-[90%] z-20 flex-col space-y-4 justify-center items-centerpx-1 py-2 md:py-4 md:px-2">
         <div className=' w-full flex justify-center items-center'>
 
        
@@ -115,7 +116,7 @@ const t= useI18n()
               initial={{ opacity: 0, x: locale === "fa" ?  -50 :50 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: locale === "fa" ?50 : -50 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.5, delay:0.03 }}
             />
           </AnimatePresence>
           </div>

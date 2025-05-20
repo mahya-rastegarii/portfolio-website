@@ -8,8 +8,8 @@ import { useChangeLocale, useCurrentLocale  } from "../../../../locales/client";
 
 
 const options = [
-  { code: "fa", label: "فارسی", icon: "/img/iran.svg"},
-  { code: "en", label: "English", icon: "/img/united-kingdom.svg" },
+  { code: "fa", label: "فارسی", icon: "/img/languages/iran.svg"},
+  { code: "en", label: "English", icon: "/img/languages/united-kingdom.svg" },
 ] as const;
 
 type LanguageOption = typeof options[number];

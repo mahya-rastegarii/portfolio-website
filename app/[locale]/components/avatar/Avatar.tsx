@@ -10,7 +10,7 @@ export default function Avatar() {
   
        
         <div className="relative z-10 flex items-center justify-center w-full h-full bg-transparent rounded-full p-1">
-         <Image alt='myAvatar' src='/img/avatar.jpg' className=" rounded-full object-fill" width={700} height={700}/>
+         <Image alt='myAvatar' src='/img/avatar/avatar.jpg' className=" rounded-full object-fill" width={700} height={700}/>
 
 
         </div>

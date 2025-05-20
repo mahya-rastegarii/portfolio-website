@@ -44,7 +44,7 @@ export default function AboutContent() {
   
 
   return (
-    <div className={` w-full  xl:w-[80%]  flex flex-col justify-center items-center md:items-end  mt-16 md:pt-20 lg:pt-0 md:flex-row  mb-5 md:mb-0  md:mt-0 ${locale === "fa" ? "md:flex-row-reverse" : "md:flex-row"} gap-10`}>
+    <div className={` w-full  xl:w-[80%]  flex flex-col justify-center items-center md:items-end  mt-16 md:pt-20 lg:pt-0 md:flex-row  mb-5 md:mb-0  md:mt-10 ${locale === "fa" ? "md:flex-row-reverse" : "md:flex-row"} gap-10`}>
 
     {/* Left Sidebar - Tabs */}
     <div className=" flex flex-col justify-center items-center w-full md:w-1/4 ">
@@ -55,10 +55,14 @@ export default function AboutContent() {
       <GradientTypographyComponent text={t('aboutMe.title')} />
       </div>
     <div className=" flex z-50 flex-col sm:flex-row md:flex-col w-full justify-center items-center  gap-4 ">
-      {tabs.map((tab) => (
-       
+      {tabs.map((tab, i) => (
+        <MotionWrapper
+        num1={locale === "fa" ? 20 : -20}
+        num2={locale === "fa" ? -20 :20}
+        delay={i*0.05}
+        className='w-full'
+        key={tab.value}>
         <Button
-         key={tab.value}
          clicked={() => setActiveTab(tab.value)}
          className={`text-left w-[80%] sm:w-1/4 md:w-full p-4 rounded-lg transition ${
             activeTab === tab.value
@@ -69,6 +73,7 @@ export default function AboutContent() {
         >
           {tab.label}
         </Button>
+          </MotionWrapper>
       ))}
     </div>
     </div>
@@ -76,10 +81,11 @@ export default function AboutContent() {
     <div className=" w-full md:w-3/4 z-50">
     
         <MotionWrapper
-          num={50}
+          num1={locale === "fa" ? -50 :50}
+          num2={locale === "fa" ? 50 :-50}
           key={activeTab}
          
-          className="px-1 md:px-2 lg:px-4  py-12 border  border-purple-500 bg-purple-500/5 rounded-lg shadow-xl"
+          className="px-1 md:px-2 lg:px-4 py-6 border  border-purple-500 bg-purple-500/5 rounded-lg shadow-xl"
         >
           {content[activeTab]}
         </MotionWrapper>

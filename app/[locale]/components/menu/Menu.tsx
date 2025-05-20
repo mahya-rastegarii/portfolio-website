@@ -29,7 +29,7 @@ export default function Menu() {
     >
       {routes.map((route, index) => (
         <Link href={route.path} key={index} className="group">
-        <TooltipComponent text={route.label} position="left">
+        <TooltipComponent text={route.label} position="left" className=" hidden md:inline-flex">
           <motion.div
             whileHover={{ scale: 1.2 }}
             className={`text-2xl sm:text-lg p-2 rounded-full  transition-all 

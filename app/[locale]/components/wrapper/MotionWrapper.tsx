@@ -1,28 +1,30 @@
 'use client'
 
+import React from 'react';
 import { AnimatePresence, motion } from 'framer-motion'
-import { useParams } from 'next/navigation';
-import React from 'react'
+// import { useParams } from 'next/navigation';
 
 type MotionProps = {
-    className: string;
-    num: number;
+    className?: string;
+    num1: number;
+    num2: number;
     children: React.ReactNode;
+    delay?: number
 }
 
-export default function MotionWrapper({className, num, children } : MotionProps) {
+export default function MotionWrapper({className, num1, num2, children, delay= 0.05 } : MotionProps) {
 
-     const params = useParams();
-      const locale = params?.locale || "en"
+    //  const params = useParams();
+      // const locale = params?.locale || "en"
   return (
     <AnimatePresence mode="wait">
     <motion.div
-    initial={{opacity: 0, x:  locale === "fa" ? -{num} : num}}
+    initial={{opacity: 0, x: num1}}
    
     animate={{opacity:1, x: 0}}
-    exit={{opacity: 0, x: locale === "fa" ? num :  -{num}}}
+    exit={{opacity: 0, x: num2 }}
     
-    transition={{duration: 0.5}}
+    transition={{duration: 0.5, delay:delay}}
     
     className={ className}>
     {
