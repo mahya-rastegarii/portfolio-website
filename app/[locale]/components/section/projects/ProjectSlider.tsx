@@ -74,7 +74,7 @@ const t= useI18n()
                0{project.id}
               </h2>
               <h2 className="text-3xl md:text-4xl font-bold text-purple-600/80">{locale === "fa" ? project.titleFa : project.titleEn}</h2>
-              <p className="text-gray-300 text-sm md:text-base leading-relaxed">{locale === "fa" ? project.descriptionFa : project.descriptionEn}</p>
+              <p className="text-gray-300 text-sm md:text-base leading-relaxed text-justify">{locale === "fa" ? project.descriptionFa : project.descriptionEn}</p>
               <ul className="flex flex-wrap gap-2 text-sm">
                 {project.techs.map((tech, i) => (
                   <li
