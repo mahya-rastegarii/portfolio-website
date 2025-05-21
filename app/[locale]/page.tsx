@@ -64,7 +64,7 @@ export  default async  function Home({params} : IPageParams) {
      </div>
      </div>
      <div className={`flex justify-center items-center  mt-4  text-white w-full ${locale === "fa" ? "text-right" : "text-left"} outfit-font`}>
-     <p className="w-[70%] font-light">
+     <p className="w-[90%] md:w-[70%] font-light">
       {t("dashboard.aboutMe")}
      </p>
      </div>

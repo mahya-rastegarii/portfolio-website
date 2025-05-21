@@ -26,12 +26,16 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins);
   background-color: #0a0819;
 }
 
-.outfit-font{
+/* .outfit-font{
  font-family: var(--font-outfit) ;
+} */
+
+.poppins-font{
+ font-family: var(--font-poppins) ;
 }
 
 .vazir-font{

@@ -1,4 +1,4 @@
-import { Outfit, Vazirmatn } from "next/font/google";
+import { Vazirmatn, Poppins } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/navdar/Navbar";
@@ -8,10 +8,15 @@ import { I18nProviderClient } from "../../locales/client";
 
 
 
-const outfit = Outfit({
+// const outfit = Outfit({
+//   subsets: ["latin"],
+//   weight: ["400", "600", "800"],
+//   variable: "--font-outfit",
+// });
+const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "600", "800"],
-  variable: "--font-outfit",
+  variable: "--font-poppins",
 });
 
 const vazir = Vazirmatn({
@@ -42,7 +47,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={ locale === "fa" ? vazir.variable : outfit.variable}>
+      <body className={` ${vazir.variable}  ${poppins.variable} ${locale === "fa" ? 'vazir-font' : 'poppins-font'}`}>
        
         <PageTransition/>
 
