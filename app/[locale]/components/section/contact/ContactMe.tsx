@@ -67,7 +67,7 @@ export default function ContactMe() {
    num1={locale === "fa" ? 20 : -20 }
    num2={locale === "fa" ? -20 : 20 }
     delay={i * 0.05 }
-   className="flex justify-start items-center gap-3">
+   className="flex justify-start items-center gap-3 mb-6 lg:mb-0">
 
 <div className='text-center my-auto border border-purple-600/80 text-xl text-purple-600/80  rounded-lg p-2 h-fit'>
    {item.icon}
@@ -91,7 +91,7 @@ export default function ContactMe() {
       <MotionWrapper
        num1={locale === "fa" ? -50 :50}
        num2={locale === "fa" ? 50 :-50}
-        className="w-full lg:w-2/4 border bg-black/10  border-purple-500/40  px-6 py-2 rounded-lg shadow-xl"
+        className="w-full lg:w-2/4 border bg-black/10  border-purple-500/30  px-6 py-2 rounded-lg shadow-xl"
        
       >
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4" >

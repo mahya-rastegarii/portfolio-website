@@ -54,12 +54,13 @@ export default function AboutContent() {
     <div className='mb-2'>
       <GradientTypographyComponent text={t('aboutMe.title')} />
       </div>
+      <div className=" flex z-50 flex-col sm:flex-row md:flex-col w-full justify-center items-center  gap-4 ">
       {tabs.map((tab, i) => (
         <MotionWrapper
         num1={locale === "fa" ? 20 : -20}
         num2={locale === "fa" ? -20 :20}
         delay={i*0.05}
-        className='flex z-50 flex-col sm:flex-row md:flex-col w-full justify-center items-center  gap-4 '
+        className='w-full mx-auto'
         key={tab.value}>
         <Button
          clicked={() => setActiveTab(tab.value)}
@@ -74,6 +75,7 @@ export default function AboutContent() {
         </Button>
           </MotionWrapper>
       ))}
+      </div>
     </div>
     {/* Right Content */}
     <div className=" w-full md:w-3/4 z-50">
