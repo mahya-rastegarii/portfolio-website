@@ -3,7 +3,7 @@ import { useI18n } from '../../locales/client';
 import Button from './components/button/Button';
 import React, { useEffect } from 'react'
 
-type ErrorProps = {
+export type ErrorProps = {
     error: Error;
     reset: () => void;
 }

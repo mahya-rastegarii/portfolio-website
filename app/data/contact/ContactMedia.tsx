@@ -18,6 +18,6 @@ export const contactMedia = [
         icon:<FaTelegramPlane/>,
         titleFa: "تلگرام",
         titleEn: "Telegram",
-        value:"mahya_rastegari@"
+        value:"mahya_rastegari"
     },
 ]

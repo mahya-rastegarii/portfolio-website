@@ -44,14 +44,14 @@ export default function AboutContent() {
   
 
   return (
-    <div className={` w-full  xl:w-[80%]  flex flex-col justify-center items-center md:items-end  mt-16 md:pt-20 lg:pt-0 md:flex-row  mb-5 md:mb-0  md:mt-10 ${locale === "fa" ? "md:flex-row-reverse" : "md:flex-row"} gap-10`}>
+    <div dir={locale === "fa" ? "rtl" : "ltr"} className={` w-full  xl:w-[80%]  flex flex-col justify-center items-center md:items-end  mt-16 md:pt-20 lg:pt-0 md:flex-row  mb-5 md:mb-0  md:mt-10  gap-10`}>
 
     {/* Left Sidebar - Tabs */}
     <div className=" flex flex-col justify-center items-center w-full md:w-1/4 ">
 
 
   
-    <div className='mb-2'>
+    <div className=' mb-2'>
       <GradientTypographyComponent text={t('aboutMe.title')} />
       </div>
       <div className=" flex z-50 flex-col sm:flex-row md:flex-col w-full justify-center items-center  gap-4 ">
@@ -60,11 +60,11 @@ export default function AboutContent() {
         num1={locale === "fa" ? 20 : -20}
         num2={locale === "fa" ? -20 :20}
         delay={i*0.05}
-        className='w-full mx-auto'
+        className='w-full flex justify-center items-center'
         key={tab.value}>
         <Button
          clicked={() => setActiveTab(tab.value)}
-         className={`text-left w-[80%] sm:w-1/4 md:w-full p-4 rounded-lg transition ${
+         className={`text-left w-[80%] md:w-full p-4 rounded-lg transition ${
             activeTab === tab.value
               ? 'bg-purple-600/80 text-white'
               : 'bg-transparent border border-purple-500 text-white hover:bg-purple-600/80'

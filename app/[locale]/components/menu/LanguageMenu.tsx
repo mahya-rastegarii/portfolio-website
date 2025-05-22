@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Image from "next/image";
@@ -22,7 +22,9 @@ export default function LanguageMenu() {
   // const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const [selected, setSelected] = useState<LanguageOption>(options[1]);
+    const menuRef = useRef<HTMLDivElement>(null);
 
+  
   const handleSelect = (option: LanguageOption) => {
     const language = option.code;
     setSelected(option);
@@ -41,8 +43,20 @@ export default function LanguageMenu() {
     }
   }, [])
 
+   const handleClickOutside = (e: MouseEvent) =>{
+          if(menuRef.current && !menuRef.current.contains(e.target as Node)) {
+            setIsOpen(false);
+          }
+        }
+          useEffect(() => {
+            document.addEventListener('mousedown', handleClickOutside);
+            return () => {
+              document.removeEventListener('mousedown', handleClickOutside);
+            }
+          }, [])
+          
   return (
-    <div className="relative z-50">
+    <div className="relative z-50" ref={menuRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-fit cursor-pointer flex  items-center justify-between p-2 gap-2  rounded-md border border-purple-500 text-white"

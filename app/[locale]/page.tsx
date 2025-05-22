@@ -40,7 +40,7 @@ export  default async  function Home({params} : IPageParams) {
       <ParticlesComponent/>
     </ClientWrapper>
    
-   <div className={`flex flex-col-reverse  ${locale === "fa" ? "md:flex-row-reverse" : "md:flex-row"} items-center  justify-center w-full md:w-[80%] mt-16 mb-20 md:mb-0  md:mt-0`}>
+   <div dir={locale === "fa" ? "rtl" : "ltr"} className={`flex flex-col-reverse  md:flex-row  items-center  justify-center w-full md:w-[80%] mt-16 mb-20 md:mb-0  md:mt-0`}>
    
      <ClientWrapper>
   <MotionWrapper
@@ -63,8 +63,8 @@ export  default async  function Home({params} : IPageParams) {
   
      </div>
      </div>
-     <div className={`flex justify-center items-center  mt-4  text-white w-full ${locale === "fa" ? "text-right" : "text-left"} outfit-font`}>
-     <p className="w-[90%] md:w-[70%] font-light text-justify">
+     <div className={`flex justify-center items-center  mt-4  text-white w-full`}>
+     <p className={`w-[90%] sm:w-{70%} ${locale === "fa" ? "lg:w-[60%]" : "lg:w-[70%]"}  font-light text-justify`}>
       {t("dashboard.aboutMe")}
      </p>
      </div>
