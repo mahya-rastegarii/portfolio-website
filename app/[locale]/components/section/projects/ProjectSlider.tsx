@@ -1,7 +1,7 @@
 
 "use client"
 
-import { motion, AnimatePresence } from 'framer-motion'
+
 import React, { useState } from 'react'
 import Button from '../../button/Button';
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
@@ -10,6 +10,7 @@ import GradientTypographyComponent from '../../typography/GradientTypographyComp
 import { Project } from '../../../../api/projects/route';
 import { useCurrentLocale, useI18n } from '../../../../../locales/client';
 import MotionWrapper from '../../wrapper/MotionWrapper';
+import Image from 'next/image';
 
 
 
@@ -42,7 +43,7 @@ const t= useI18n()
   return (
     <div dir={locale === "fa" ? "rtl" : "ltr"} className={`flex flex-col-reverse lg:flex-row items-center lg:items-end justify-center w-full mt-16 md:mt-24 mb-20 md:mb-10 lg:mt-0 lg:mb-0  max-w-6xl `}>
 
-        {/* Left - Info */}
+      
         <div dir='ltr' className='flex h-fit z-40  lg:hidden justify-end items-center px-7 gap-2 md:mt-20 lg:mt-0'>
 
 <div className="">
@@ -102,23 +103,23 @@ const t= useI18n()
             </MotionWrapper>
         </div>
 
-        {/* Right - Image */}
+       
         <div className="w-full lg:w-1/2 md:w-[90%] z-20 flex-col space-y-4 justify-center items-centerpx-1 py-2 md:py-4 md:px-2">
         <div className=' w-full flex justify-center items-center'>
 
        
-          <AnimatePresence mode="wait">
-            <motion.img
-              key={project.titleEn}
-              src={project.image}
-              alt={project.titleEn}
-              className=" w-full h-auto object-cover"
-              initial={{ opacity: 0, x: locale === "fa" ?  -50 :50 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: locale === "fa" ?50 : -50 }}
-              transition={{ duration: 0.5, delay:0.03 }}
-            />
-          </AnimatePresence>
+        
+            <MotionWrapper
+            num1={locale === "fa" ?  -50 :50}
+            num2={locale === "fa" ?50 : -50}
+            key={project.titleEn}
+            className=" w-full "
+            >
+              <Image   alt={project.titleEn}  src={project.image} className="w-full  object-cover" width={800} height={600}/>
+             
+            
+              </MotionWrapper>
+         
           </div>
           {/* Arrows */}
           <div dir='ltr' className={`hidden  lg:flex ${locale === "fa" ? "justify-start" : "justify-end"}  items-center px-7 gap-2`}>

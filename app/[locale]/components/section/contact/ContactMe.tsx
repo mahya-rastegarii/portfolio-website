@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import Button from '../../button/Button'
-// import {AnimatePresence, motion} from 'framer-motion'
 import { contactMedia } from '../../../../data/contact/ContactMedia';
 import GradientTypographyComponent from '../../typography/GradientTypographyComponent';
 import emailjs from "@emailjs/browser"
@@ -59,7 +58,7 @@ export default function ContactMe() {
        <GradientTypographyComponent text={t('contactMe.title')}/> 
         
         </div> 
-<div className="flex flex-col justify-start items-center gap-4">
+<div className="flex flex-col justify-start items-center gap-3 mb-6  lg:mb-0">
 {
   contactMedia.map( (item, i) => (
 
@@ -67,7 +66,7 @@ export default function ContactMe() {
    num1={locale === "fa" ? 20 : -20 }
    num2={locale === "fa" ? -20 : 20 }
     delay={i * 0.05 }
-   className="w-full flex justify-start items-center gap-3 mb-6 lg:mb-0">
+   className="w-full flex justify-start items-center gap-3 ">
 
 <div className='text-center my-auto border border-purple-600/80 text-xl text-purple-600/80  rounded-lg p-2 h-fit'>
    {item.icon}

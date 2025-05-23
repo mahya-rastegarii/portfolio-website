@@ -1,22 +1,15 @@
 
 
-
-
 export type skillsProps = {
   id: number;
   skill: string;
   dir:string;
 }
 
-
 export default function ScanTypographyComponent ({skill, id, dir}: skillsProps ) {
 
 
  return(
-   
-  
-   
-  
 
       <span
         style={{"--i": id } as React.CSSProperties}
@@ -27,12 +20,5 @@ export default function ScanTypographyComponent ({skill, id, dir}: skillsProps )
           skill
          }
            </span>
-    
-    
-    
-    
-
-
- 
  )
 }

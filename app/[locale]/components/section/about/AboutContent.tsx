@@ -12,8 +12,6 @@ import Education from './Education';
 import MotionWrapper from '../../wrapper/MotionWrapper';
 
 
-// type TabType = typeof tabs[number];
-
 
 export default function AboutContent() {
   
@@ -46,8 +44,8 @@ export default function AboutContent() {
   return (
     <div dir={locale === "fa" ? "rtl" : "ltr"} className={` w-full  xl:w-[80%]  flex flex-col justify-center items-center md:items-end  mt-16 md:pt-20 lg:pt-0 md:flex-row  mb-5 md:mb-0  md:mt-10  gap-10`}>
 
-    {/* Left Sidebar - Tabs */}
-    <div className=" flex flex-col justify-center items-center w-full md:w-1/4 ">
+   
+    <div className=" flex flex-col justify-center items-center w-full md:w-[30%] ">
 
 
   
@@ -77,8 +75,8 @@ export default function AboutContent() {
       ))}
       </div>
     </div>
-    {/* Right Content */}
-    <div className=" w-full md:w-3/4 z-50">
+   
+    <div className=" w-full md:w-[70%] z-50">
     
         <MotionWrapper
           num1={locale === "fa" ? -50 :50}

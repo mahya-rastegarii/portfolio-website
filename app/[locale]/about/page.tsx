@@ -3,7 +3,6 @@
 import { Metadata } from 'next';
 import AboutContent from '../components/section/about/AboutContent';
 
-// import GradientTypographyComponent from '@/components/typography/GradientTypographyComponent';
 import React from 'react';
 
 export const metadata: Metadata = {

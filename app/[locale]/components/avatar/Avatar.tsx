@@ -16,7 +16,6 @@ export default function Avatar() {
         </div>
   
     
-        {/* <div className="absolute inset-0 rounded-full border-2 border-purple-400 animate-ping  custom-duration z-0" /> */}
       </div>
     );
  

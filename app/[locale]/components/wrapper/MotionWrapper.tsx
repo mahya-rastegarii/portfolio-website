@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { AnimatePresence, motion } from 'framer-motion'
-// import { useParams } from 'next/navigation';
+
 
 type MotionProps = {
     className?: string;
@@ -14,8 +14,7 @@ type MotionProps = {
 
 export default function MotionWrapper({className, num1, num2, children, delay= 0.05 } : MotionProps) {
 
-    //  const params = useParams();
-      // const locale = params?.locale || "en"
+  
   return (
     <AnimatePresence mode="wait">
     <motion.div

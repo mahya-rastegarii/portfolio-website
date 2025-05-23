@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 
-// import TooltipComponent from '../tooltip/TooltipComponent';
 
 type ButtonProps = {
     children: React.ReactNode;

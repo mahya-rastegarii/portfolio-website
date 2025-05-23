@@ -1,7 +1,7 @@
 "use client"
-import React from 'react'
-// import { DiGithub } from 'react-icons/di'
+import React from 'react';
 import Button from './Button';
+
 import { RiGithubLine, RiLinkedinLine, RiTelegram2Line } from 'react-icons/ri';
 
 type MediaInfoProps = {

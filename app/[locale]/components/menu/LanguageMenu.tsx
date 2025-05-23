@@ -18,8 +18,6 @@ export default function LanguageMenu() {
 
  const changeLanguage = useChangeLocale()
  const locale = useCurrentLocale()
-  // const pathname = usePathname();
-  // const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const [selected, setSelected] = useState<LanguageOption>(options[1]);
     const menuRef = useRef<HTMLDivElement>(null);

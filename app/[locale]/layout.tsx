@@ -8,20 +8,18 @@ import { I18nProviderClient } from "../../locales/client";
 
 
 
-// const outfit = Outfit({
-//   subsets: ["latin"],
-//   weight: ["400", "600", "800"],
-//   variable: "--font-outfit",
-// });
+
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "600", "800"],
+  display: "swap",
   variable: "--font-poppins",
 });
 
 const vazir = Vazirmatn({
   subsets: ["arabic"],
   weight: ["400", "600", "800"],
+  display: "swap",
   variable: "--font-vazir"
 })
 
@@ -61,7 +59,7 @@ export default async function RootLayout({
         <Menu/>
         {children}
         </div>
-        {/* </PageTransition> */}
+        
         </I18nProviderClient>
       </body>
     </html>
