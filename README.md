@@ -8,7 +8,8 @@ This project includes:
 - 🌐 English & Persian support (Multilingual)
 - 📱 Responsive design for all screen sizes
 - ✨ Beautiful animations and particle effects
-- 📄 Resume download and 📧 email sending via contact form
+- 📄 Resume download
+- 📧 email sending via contact form
 
 ---
 
@@ -18,7 +19,8 @@ This project includes:
 - 🌐 پشتیبانی از زبان انگلیسی و فارسی
 - 📱 طراحی ریسپانسیو برای تمامی صفحه‌نمایش‌ها
 - ✨ انیمیشن‌های زیبا و جلوه‌های ذره‌ای (Particles)
-- 📄 امکان دانلود رزومه و 📧 ارسال ایمیل از طریق فرم تماس
+- 📄 امکان دانلود رزومه
+- 📧 امکان ارسال ایمیل از طریق فرم تماس
 
 ## 🔗 Live Demo | نسخه آنلاین  
 👉 [portfolio-website-nu-three-50.vercel.app](https://portfolio-website-nu-three-50.vercel.app/en)
@@ -58,7 +60,9 @@ This project includes:
 * Building a minimal and responsive UI using Tailwind CSS and smooth animations with Framer Motion  
 * Implementing particle effects with tsparticles and managing forms using React Hook Form  
 * Adding multilingual support with next-international  
-* Sending emails via EmailJS in a Next.js environment  
+* Sending emails via EmailJS in a Next.js environment
+---
+
 * طراحی رابط کاربری مینیمال با Tailwind و انیمیشن‌های روان با Framer Motion  
 * پیاده‌سازی پارتیکل‌ها با tsparticles و مدیریت فرم‌ها با React Hook Form  
 * دوزبانه کردن پروژه با next-international  
