@@ -21,6 +21,29 @@ This project includes:
 - ✨ انیمیشن‌های زیبا و جلوه‌های ذره‌ای (Particles)
 - 📄 امکان دانلود رزومه
 - 📧 امکان ارسال ایمیل از طریق فرم تماس
+## 📸 Screenshots
+### 🖥️ Desktop Version | نسخه دسکتاپ
+#### Home Page  
+<p align="center">
+  <img src="public/README-Pic/mobile-screen-homePageEn.png" width="48%" alt="desktop-homePageEn"/>
+  <img src="public/README-Pic/desktop-screen-homePageFa" width="48%" ali="desktop-homePageFa"/>
+</p>
+
+### Contact Me  
+<p align="center">
+  <img src="public/README-Pic/desktop-screen-contactMeEn.png" width="48%" alt="desktop-contactMeEn"/>
+  <img src="public/README-Pic/desktop-screen-contactMeFa" width="48%" ali="desktop-contactMeFa"/>
+</p>
+
+---
+
+### 📱 Mobile Version | نسخه موبایل
+#### Home Page  
+<p align="center">
+  <img src="public/README-Pic/mobile-screen-homePageEn.png" width="48%" alt="mobile-homePageEn"/>
+  <img src="public/README-Pic/mobile-screen-homePageFa" width="48%" ali="mobile-homePageFa"/>
+</p>
+
 
 ## 🔗 Live Demo | نسخه آنلاین  
 👉 [portfolio-website-nu-three-50.vercel.app](https://portfolio-website-nu-three-50.vercel.app/en)
