@@ -39,7 +39,7 @@ This project includes:
 
 ### 📱 Mobile Version | نسخه موبایل
 #### Home Page  
-  <img src="public/README-Pic/mobile-screen-homePageEn.jpg" width="60%" alt="mobile-homePageEn"/>
+  <img src="public/README-Pic/mobile-screen-homePageEn.jpg" width="40%" alt="mobile-homePageEn"/>
  
 
 
