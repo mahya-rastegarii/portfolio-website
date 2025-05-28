@@ -25,14 +25,14 @@ This project includes:
 ### 🖥️ Desktop Version | نسخه دسکتاپ
 #### Home Page  
 <p align="center">
-  <img src="public/README-Pic/mobile-screen-homePageEn.png" width="48%" alt="desktop-homePageEn"/>
-  <img src="public/README-Pic/desktop-screen-homePageFa" width="48%" ali="desktop-homePageFa"/>
+  <img src="public/README-Pic/desktop-screen-homePageEn.png" width="48%" alt="desktop-homePageEn"/>
+  <img src="public/README-Pic/desktop-screen-homePageFa.png" width="48%" ali="desktop-homePageFa"/>
 </p>
 
 ### Contact Me  
 <p align="center">
   <img src="public/README-Pic/desktop-screen-contactMeEn.png" width="48%" alt="desktop-contactMeEn"/>
-  <img src="public/README-Pic/desktop-screen-contactMeFa" width="48%" ali="desktop-contactMeFa"/>
+  <img src="public/README-Pic/desktop-screen-contactMeFa.png" width="48%" ali="desktop-contactMeFa"/>
 </p>
 
 ---
@@ -41,7 +41,7 @@ This project includes:
 #### Home Page  
 <p align="center">
   <img src="public/README-Pic/mobile-screen-homePageEn.png" width="48%" alt="mobile-homePageEn"/>
-  <img src="public/README-Pic/mobile-screen-homePageFa" width="48%" ali="mobile-homePageFa"/>
+  <img src="public/README-Pic/mobile-screen-homePageFa.png" width="48%" ali="mobile-homePageFa"/>
 </p>
 
 
