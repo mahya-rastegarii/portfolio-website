@@ -39,10 +39,8 @@ This project includes:
 
 ### 📱 Mobile Version | نسخه موبایل
 #### Home Page  
-<p align="center">
-  <img src="public/README-Pic/mobile-screen-homePageEn.jpg" width="28%" height="500" alt="mobile-homePageEn"/>
-  <img src="public/README-Pic/mobile-screen-homePageFa.jpg" width="28%" height="500" ali="mobile-homePageFa"/>
-</p>
+  <img src="public/README-Pic/mobile-screen-homePageEn.jpg" width="60%" alt="mobile-homePageEn"/>
+ 
 
 
 ## 🔗 Live Demo | نسخه آنلاین  
