@@ -40,8 +40,8 @@ This project includes:
 ### 📱 Mobile Version | نسخه موبایل
 #### Home Page  
 <p align="center">
-  <img src="public/README-Pic/mobile-screen-homePageEn.jpg" width="28%" alt="mobile-homePageEn"/>
-  <img src="public/README-Pic/mobile-screen-homePageFa.jpg" width="28%" ali="mobile-homePageFa"/>
+  <img src="public/README-Pic/mobile-screen-homePageEn.jpg" width="28%" height="90%" alt="mobile-homePageEn"/>
+  <img src="public/README-Pic/mobile-screen-homePageFa.jpg" width="28%" height="90%" ali="mobile-homePageFa"/>
 </p>
 
 
