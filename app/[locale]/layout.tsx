@@ -29,7 +29,22 @@ export const metadata: Metadata = {
  template: "Portfolio | %s",
  default: "Portfolio"
   },
-  description: "portfolio",
+  description: "my personal portfolio website",
+  openGraph: {
+    title: "Mahya Rastegari | Frontend Developer",
+    description: "Welcome to my personal portfolio website.",
+    url: "https://portfolio-website-nu-three-50.vercel.app/",
+    siteName: "Mahya Rastegari Portfolio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Mahya Portfolio Cover",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default async function RootLayout({
