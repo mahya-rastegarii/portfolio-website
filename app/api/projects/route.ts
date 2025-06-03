@@ -23,7 +23,7 @@ const projects: Project[] = [
         descriptionFa: 'یک اپلیکیشن هواشناسی با قابلیت تبدیل دما بین سانتی‌گراد و فارنهایت و تغییر پویا‌ی پس‌زمینه بر اساس شرایط آب‌وهوایی شهر انتخاب‌شده',
         techs: ['Reactjs', 'TailwindCss'],
         image: '/img/projects/weatherApp.png',
-        preview : 'weather-app-sand-alpha.vercel.app',
+        preview : 'https://weather-app-sand-alpha.vercel.app',
         github: 'https://github.com/mahya-rastegarii/weather-App.git',
       },
       {
@@ -45,7 +45,7 @@ const projects: Project[] = [
         descriptionFa: 'یک پلتفرم فیلم و سریال با قابلیت‌های پیشرفته فیلتر و جستجو براساس ژانر، کشور، سال تولید و امتیاز. کاربران همچنین می‌توانند روی هر فیلم یا سریال نظر ثبت کنند و فیلم و سریال مورد علاقه‌ی خود را به لیست علاقه‌مندی‌ها اضافه کنند',
         techs: ['React', 'vite', 'redux-toolkit', 'redux-persist', 'supabase', 'lodash', 'swiper',  'TailwindCss' ],
         image: '/img/projects/movieSite.png',
-        preview : 'movie-site-topaz.vercel.app',
+        preview : 'https://movie-site-topaz.vercel.app',
         github: 'https://github.com/mahya-rastegarii/movieSite.git',
       },
     ];
