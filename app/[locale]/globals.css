@@ -27,21 +27,27 @@ body {
 animation-duration: 5s;
 
 }
-
-.text-scan-rtl{
-  direction: rtl;
+.text-scan{
+   position: absolute;
+  transform: translateX(-50%);
+  top:-20;
+  left:50%;
   color: transparent;
+  width: max-content;
   -webkit-text-stroke: 1px #fafafa;
   animation: display-text 8s linear infinite;
   animation-delay: calc(-4s * var(--i));
+
+}
+
+.text-scan-rtl{
+  direction: rtl;
+ 
 }
 
 .text-scan-ltr{
   direction: ltr;
-  color: transparent;
-  -webkit-text-stroke: 1px #fafafa;
-  animation: display-text 8s linear infinite;
-  animation-delay: calc(-4s * var(--i));
+
 }
 
 .text-scan-rtl::before{
@@ -69,9 +75,13 @@ animation-duration: 5s;
 
 
 @keyframes display-text {
-  50%,
-  100%{
-    display:none;
+  0%,50%{
+    visibility: visible;
+    opacity:1;
+  }
+  51%,100%{
+    visibility: hidden;
+    opacity: 0;
   } 
   
 }

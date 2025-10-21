@@ -15,17 +15,18 @@ export type Project = {
   
   
 const projects: Project[] = [
-      {
+   {
         id:1,
-        titleEn: 'Weather App',
-        titleFa: 'اپلیکیشن آب و هوا',
-        descriptionEn: 'A weather application with the ability to convert temperatures between Celsius and Fahrenheit, and dynamically change the background based on the weather conditions of the selected city.',
-        descriptionFa: 'یک اپلیکیشن هواشناسی با قابلیت تبدیل دما بین سانتی‌گراد و فارنهایت و تغییر پویا‌ی پس‌زمینه بر اساس شرایط آب‌وهوایی شهر انتخاب‌شده',
-        techs: ['Reactjs', 'TailwindCss'],
-        image: '/img/projects/weatherApp.png',
-        preview : 'https://weather-app-sand-alpha.vercel.app',
-        github: 'https://github.com/mahya-rastegarii/weather-App.git',
+        titleEn: 'Movie Site',
+        titleFa: 'سایت فیلم و سریال',
+        descriptionEn: 'A movie and TV series platform with advanced filtering and search capabilities by genre, country, release year, and rating. Users can also leave comments on each title and add movies or series to their favorites list.',
+        descriptionFa: 'یک پلتفرم فیلم و سریال با قابلیت‌های پیشرفته فیلتر و جستجو براساس ژانر، کشور، سال تولید و امتیاز. کاربران همچنین می‌توانند روی هر فیلم یا سریال نظر ثبت کنند و فیلم و سریال مورد علاقه‌ی خود را به لیست علاقه‌مندی‌ها اضافه کنند',
+        techs: ['React', 'vite', 'redux-toolkit', 'redux-persist', 'supabase', 'lodash', 'swiper',  'TailwindCss' ],
+        image: '/img/projects/movieSite.png',
+        preview : 'https://movie-site-topaz.vercel.app',
+        github: 'https://github.com/mahya-rastegarii/movieSite.git',
       },
+     
       {
         id:2,
         titleEn: 'Admin Dashboard',
@@ -37,17 +38,19 @@ const projects: Project[] = [
         preview : 'https://admin-dashboard-alpha-five-14.vercel.app',
         github: 'https://github.com/mahya-rastegarii/Admin-Dashboard.git',
       },
+
       {
         id:3,
-        titleEn: 'Movie Site',
-        titleFa: 'سایت فیلم و سریال',
-        descriptionEn: 'A movie and TV series platform with advanced filtering and search capabilities by genre, country, release year, and rating. Users can also leave comments on each title and add movies or series to their favorites list.',
-        descriptionFa: 'یک پلتفرم فیلم و سریال با قابلیت‌های پیشرفته فیلتر و جستجو براساس ژانر، کشور، سال تولید و امتیاز. کاربران همچنین می‌توانند روی هر فیلم یا سریال نظر ثبت کنند و فیلم و سریال مورد علاقه‌ی خود را به لیست علاقه‌مندی‌ها اضافه کنند',
-        techs: ['React', 'vite', 'redux-toolkit', 'redux-persist', 'supabase', 'lodash', 'swiper',  'TailwindCss' ],
-        image: '/img/projects/movieSite.png',
-        preview : 'https://movie-site-topaz.vercel.app',
-        github: 'https://github.com/mahya-rastegarii/movieSite.git',
+        titleEn: 'Weather App',
+        titleFa: 'اپلیکیشن آب و هوا',
+        descriptionEn: 'A weather application with the ability to convert temperatures between Celsius and Fahrenheit, and dynamically change the background based on the weather conditions of the selected city.',
+        descriptionFa: 'یک اپلیکیشن هواشناسی با قابلیت تبدیل دما بین سانتی‌گراد و فارنهایت و تغییر پویا‌ی پس‌زمینه بر اساس شرایط آب‌وهوایی شهر انتخاب‌شده',
+        techs: ['Reactjs', 'TailwindCss'],
+        image: '/img/projects/weatherApp.png',
+        preview : 'https://weather-app-sand-alpha.vercel.app',
+        github: 'https://github.com/mahya-rastegarii/weather-App.git',
       },
+     
     ];
 
 

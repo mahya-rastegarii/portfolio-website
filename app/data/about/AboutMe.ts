@@ -11,18 +11,21 @@ export const aboutMe = [
         headerEn:"Date Of Birth",
         valueEn: "2001-04-15",
     },
-    {
-        headerFa:"شهر",
-        valueFa: "رباط کریم",
-        headerEn:"City",
-        valueEn: "Robat Karim",
-    },
+
     {
         headerFa: "استان",
         valueFa: "تهران",
         headerEn: "Province",
         valueEn: "Tehran",
     },
+    
+    {
+        headerFa:"شهر",
+        valueFa: "رباط کریم",
+        headerEn:"City",
+        valueEn: "Robat Karim",
+    },
+  
     {
         headerFa: "وضعیت تاهل",
         valueFa: "مجرد",

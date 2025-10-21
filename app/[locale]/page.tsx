@@ -52,7 +52,7 @@ export  default async  function Home({params} : IPageParams) {
      
      <div className="mt-4">
       
-      <div className="relative overflow-hidden">
+      <div className="relative inline-block">
    
       
      {

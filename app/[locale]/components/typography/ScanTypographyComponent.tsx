@@ -13,7 +13,7 @@ export default function ScanTypographyComponent ({skill, id, dir}: skillsProps )
 
       <span
         style={{"--i": id } as React.CSSProperties}
-         className={`relative inline-block font-bold text-2xl md:text-3xl ${dir}`}
+         className={` text-scan inline-block font-bold text-2xl md:text-3xl ${dir}`}
           data-text={skill}
           > 
          {
