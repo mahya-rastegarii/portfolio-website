@@ -50,7 +50,7 @@ export  default async  function Home({params} : IPageParams) {
 <div className="w-full max-w-3xl text-center">
     <GradientTypographyComponent text={name}/>
      
-     <div className="mt-4">
+     <div className="my-5">
       
       <div className="relative inline-block">
    
